@@ -1,0 +1,689 @@
+D:\>java -Xms256m -Xmx256m -XX:+UseSerialGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T19:55:44.589+0800: [GC (Allocation Failure) 2021-03-23T19:55:44.590+0800: [DefNew: 69952K->8704K(78656K), 0.0455680 secs] 69952K->21327K(253440K), 0.0531520 secs] [Times: user=0.03 sys=0.05, real=0.05 secs]
+2021-03-23T19:55:44.709+0800: [GC (Allocation Failure) 2021-03-23T19:55:44.710+0800: [DefNew: 78656K->8698K(78656K), 0.0593305 secs] 91279K->41851K(253440K), 0.0608715 secs] [Times: user=0.08 sys=0.02, real=0.06 secs]
+2021-03-23T19:55:44.826+0800: [GC (Allocation Failure) 2021-03-23T19:55:44.828+0800: [DefNew: 78650K->8702K(78656K), 0.0550170 secs] 111803K->66367K(253440K), 0.0584521 secs] [Times: user=0.06 sys=0.03, real=0.06 secs]
+2021-03-23T19:55:44.934+0800: [GC (Allocation Failure) 2021-03-23T19:55:44.935+0800: [DefNew: 78654K->8695K(78656K), 0.0557095 secs] 136319K->88685K(253440K), 0.0573408 secs] [Times: user=0.08 sys=0.02, real=0.06 secs]
+2021-03-23T19:55:45.031+0800: [GC (Allocation Failure) 2021-03-23T19:55:45.032+0800: [DefNew: 78647K->8703K(78656K), 0.0454993 secs] 158637K->113233K(253440K), 0.0499809 secs] [Times: user=0.02 sys=0.03, real=0.05 secs]
+2021-03-23T19:55:45.121+0800: [GC (Allocation Failure) 2021-03-23T19:55:45.122+0800: [DefNew: 78655K->8700K(78656K), 0.0443936 secs] 183185K->135261K(253440K), 0.0457035 secs] [Times: user=0.03 sys=0.00, real=0.05 secs]
+2021-03-23T19:55:45.216+0800: [GC (Allocation Failure) 2021-03-23T19:55:45.217+0800: [DefNew: 78629K->8702K(78656K), 0.0436567 secs] 205190K->157761K(253440K), 0.0549058 secs] [Times: user=0.02 sys=0.02, real=0.06 secs]
+2021-03-23T19:55:45.303+0800: [GC (Allocation Failure) 2021-03-23T19:55:45.304+0800: [DefNew: 78654K->78654K(78656K), 0.0004823 secs]2021-03-23T19:55:45.305+0800: [Tenured: 149058K->153400K(174784K), 0.0594198 secs] 227713K->153400K(253440K), [Metaspace: 2644K->2644K(1056768K)], 0.0621110 secs] [Times: user=0.05 sys=0.01, real=0.07 secs]
+执行结束！共生成对象的个数:2477
+Heap
+ def new generation   total 78656K, used 63599K [0x00000000f0000000, 0x00000000f5550000, 0x00000000f5550000)
+  eden space 69952K,  90% used [0x00000000f0000000, 0x00000000f3e1bf48, 0x00000000f4450000)
+  from space 8704K,   0% used [0x00000000f4cd0000, 0x00000000f4cd0000, 0x00000000f5550000)
+  to   space 8704K,   0% used [0x00000000f4450000, 0x00000000f4450000, 0x00000000f4cd0000)
+ tenured generation   total 174784K, used 153400K [0x00000000f5550000, 0x0000000100000000, 0x0000000100000000)
+   the space 174784K,  87% used [0x00000000f5550000, 0x00000000feb1e0d8, 0x00000000feb1e200, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+
+
+D:\>java -Xms512m -Xmx512m -XX:+UseSerialGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:05:31.205+0800: [GC (Allocation Failure) 2021-03-23T20:05:31.206+0800: [DefNew: 139776K->17472K(157248K), 0.0889187 secs] 139776K->40594K(506816K), 0.0903248 secs] [Times: user=0.09 sys=0.06, real=0.09 secs]
+2021-03-23T20:05:31.373+0800: [GC (Allocation Failure) 2021-03-23T20:05:31.374+0800: [DefNew: 157248K->17471K(157248K), 0.1385677 secs] 180370K->80771K(506816K), 0.1396682 secs] [Times: user=0.06 sys=0.08, real=0.14 secs]
+2021-03-23T20:05:31.579+0800: [GC (Allocation Failure) 2021-03-23T20:05:31.580+0800: [DefNew: 157247K->17469K(157248K), 0.1542265 secs] 220547K->128926K(506816K), 0.1553807 secs] [Times: user=0.09 sys=0.06, real=0.16 secs]
+2021-03-23T20:05:31.793+0800: [GC (Allocation Failure) 2021-03-23T20:05:31.795+0800: [DefNew: 157245K->17464K(157248K), 0.0921328 secs] 268702K->172174K(506816K), 0.0936060 secs] [Times: user=0.03 sys=0.06, real=0.10 secs]
+执行结束！共生成对象的个数:2308
+Heap
+ def new generation   total 157248K, used 23185K [0x00000000e0000000, 0x00000000eaaa0000, 0x00000000eaaa0000)
+  eden space 139776K,   4% used [0x00000000e0000000, 0x00000000e05963a8, 0x00000000e8880000)
+  from space 17472K,  99% used [0x00000000e8880000, 0x00000000e998e308, 0x00000000e9990000)
+  to   space 17472K,   0% used [0x00000000e9990000, 0x00000000e9990000, 0x00000000eaaa0000)
+ tenured generation   total 349568K, used 154710K [0x00000000eaaa0000, 0x0000000100000000, 0x0000000100000000)
+   the space 349568K,  44% used [0x00000000eaaa0000, 0x00000000f41b5888, 0x00000000f41b5a00, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+
+D:\>java -Xms1024m -Xmx1024m -XX:+UseSerialGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:06:12.191+0800: [GC (Allocation Failure) 2021-03-23T20:06:12.192+0800: [DefNew: 279616K->34944K(314560K), 0.1659595 secs] 279616K->81423K(1013632K), 0.1673103 secs] [Times: user=0.08 sys=0.08, real=0.17 secs]
+执行结束！共生成对象的个数:1996
+Heap
+ def new generation   total 314560K, used 231127K [0x00000000c0000000, 0x00000000d5550000, 0x00000000d5550000)
+  eden space 279616K,  70% used [0x00000000c0000000, 0x00000000cbf95e90, 0x00000000d1110000)
+  from space 34944K, 100% used [0x00000000d3330000, 0x00000000d5550000, 0x00000000d5550000)
+  to   space 34944K,   0% used [0x00000000d1110000, 0x00000000d1110000, 0x00000000d3330000)
+ tenured generation   total 699072K, used 46479K [0x00000000d5550000, 0x0000000100000000, 0x0000000100000000)
+   the space 699072K,   6% used [0x00000000d5550000, 0x00000000d82b3ea8, 0x00000000d82b4000, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+D:\>java -Xms2g -Xmx2g -XX:+UseSerialGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+执行结束！共生成对象的个数:1897
+Heap
+ def new generation   total 629120K, used 475325K [0x0000000080000000, 0x00000000aaaa0000, 0x00000000aaaa0000)
+  eden space 559232K,  84% used [0x0000000080000000, 0x000000009d02f568, 0x00000000a2220000)
+  from space 69888K,   0% used [0x00000000a2220000, 0x00000000a2220000, 0x00000000a6660000)
+  to   space 69888K,   0% used [0x00000000a6660000, 0x00000000a6660000, 0x00000000aaaa0000)
+ tenured generation   total 1398144K, used 0K [0x00000000aaaa0000, 0x0000000100000000, 0x0000000100000000)
+   the space 1398144K,   0% used [0x00000000aaaa0000, 0x00000000aaaa0000, 0x00000000aaaa0200, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+D:\>java -Xms256m -Xmx256m -XX:+UseConcMarkSweepGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:08:30.503+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.503+0800: [ParNew: 69952K->8703K(78656K), 0.0147578 secs] 69952K->22105K(253440K), 0.0157753 secs] [Times: user=0.00 sys=0.00, real=0.02 secs]
+2021-03-23T20:08:30.568+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.568+0800: [ParNew: 78328K->8704K(78656K), 0.0267320 secs] 91730K->46526K(253440K), 0.0277694 secs] [Times: user=0.05 sys=0.06, real=0.03 secs]
+2021-03-23T20:08:30.650+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.651+0800: [ParNew: 78592K->8703K(78656K), 0.0513930 secs] 116415K->68094K(253440K), 0.0528981 secs] [Times: user=0.28 sys=0.05, real=0.05 secs]
+2021-03-23T20:08:30.749+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.750+0800: [ParNew: 78655K->8701K(78656K), 0.0608472 secs] 138046K->92851K(253440K), 0.0620292 secs] [Times: user=0.34 sys=0.08, real=0.06 secs]
+2021-03-23T20:08:30.857+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.859+0800: [ParNew: 78447K->8697K(78656K), 0.0507577 secs] 162597K->113347K(253440K), 0.0526155 secs] [Times: user=0.25 sys=0.06, real=0.05 secs]
+2021-03-23T20:08:30.912+0800: [GC (CMS Initial Mark) [1 CMS-initial-mark: 104649K(174784K)] 113635K(253440K), 0.0025192 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]
+2021-03-23T20:08:30.915+0800: [CMS-concurrent-mark-start]
+2021-03-23T20:08:30.921+0800: [CMS-concurrent-mark: 0.005/0.005 secs] [Times: user=0.02 sys=0.00, real=0.02 secs]
+2021-03-23T20:08:30.931+0800: [CMS-concurrent-preclean-start]
+2021-03-23T20:08:30.936+0800: [CMS-concurrent-preclean: 0.001/0.001 secs] [Times: user=0.02 sys=0.00, real=0.01 secs]
+2021-03-23T20:08:30.943+0800: [CMS-concurrent-abortable-preclean-start]
+2021-03-23T20:08:30.959+0800: [GC (Allocation Failure) 2021-03-23T20:08:30.960+0800: [ParNew: 78361K->8702K(78656K), 0.0456876 secs] 183010K->131043K(253440K), 0.0464769 secs] [Times: user=0.31 sys=0.01, real=0.05 secs]
+2021-03-23T20:08:31.043+0800: [GC (Allocation Failure) 2021-03-23T20:08:31.044+0800: [ParNew: 78598K->8696K(78656K), 0.0560696 secs] 200939K->154363K(253440K), 0.0581807 secs] [Times: user=0.45 sys=0.03, real=0.06 secs]
+2021-03-23T20:08:31.138+0800: [GC (Allocation Failure) 2021-03-23T20:08:31.139+0800: [ParNew: 78648K->8703K(78656K), 0.0559665 secs] 224315K->176993K(253440K), 0.0570045 secs] [Times: user=0.36 sys=0.05, real=0.06 secs]
+2021-03-23T20:08:31.196+0800: [CMS-concurrent-abortable-preclean: 0.005/0.252 secs] [Times: user=1.20 sys=0.09, real=0.26 secs]
+2021-03-23T20:08:31.202+0800: [GC (CMS Final Remark) [YG occupancy: 21873 K (78656 K)]2021-03-23T20:08:31.208+0800: [Rescan (parallel) , 0.0018338 secs]2021-03-23T20:08:31.210+0800: [weak refs processing, 0.0009581 secs]2021-03-23T20:08:31.211+0800: [class unloading, 0.0099950 secs]2021-03-23T20:08:31.221+0800: [scrub symbol table, 0.0011627 secs]2021-03-23T20:08:31.222+0800: [scrub string table, 0.0019666 secs][1 CMS-remark: 168289K(174784K)] 190163K(253440K), 0.0223642 secs] [Times: user=0.00 sys=0.00, real=0.02 secs]
+2021-03-23T20:08:31.232+0800: [CMS-concurrent-sweep-start]
+2021-03-23T20:08:31.239+0800: [CMS-concurrent-sweep: 0.001/0.001 secs] [Times: user=0.02 sys=0.00, real=0.02 secs]
+2021-03-23T20:08:31.248+0800: [CMS-concurrent-reset-start]
+2021-03-23T20:08:31.252+0800: [CMS-concurrent-reset: 0.001/0.001 secs] [Times: user=0.02 sys=0.00, real=0.01 secs]
+2021-03-23T20:08:31.259+0800: [GC (Allocation Failure) 2021-03-23T20:08:31.268+0800: [ParNew: 78655K->78655K(78656K), 0.0006379 secs]2021-03-23T20:08:31.269+0800: [CMS: 155595K->152201K(174784K), 0.0621464 secs] 234250K->152201K(253440K), [Metaspace: 2644K->2644K(1056768K)], 0.0791608 secs] [Times: user=0.06 sys=0.00, real=0.08 secs]
+2021-03-23T20:08:31.340+0800: [GC (CMS Initial Mark) [1 CMS-initial-mark: 152201K(174784K)] 152273K(253440K), 0.0055048 secs] [Times: user=0.00 sys=0.00, real=0.01 secs]
+2021-03-23T20:08:31.346+0800执行结束！共生成对象的个数:2632:
+[CMS-concurrent-mark-start]
+Heap
+ par new generation   total 78656K, used 3009K [0x00000000f0000000, 0x00000000f5550000, 0x00000000f5550000)
+  eden space 69952K,   4% used [0x00000000f0000000, 0x00000000f02f04a0, 0x00000000f4450000)
+  from space 8704K,   0% used [0x00000000f4450000, 0x00000000f4450000, 0x00000000f4cd0000)
+  to   space 8704K,   0% used [0x00000000f4cd0000, 0x00000000f4cd0000, 0x00000000f5550000)
+ concurrent mark-sweep generation2021-03-23T20:08:31.389+0800:  total 174784K, used 152201K[CMS-concurrent-mark: 0.002/0.002 secs] [0x00000000f5550000, 0x0000000100000000, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+ [Times: user=0.00 sys=0.00, real=0.06 secs]
+
+
+
+D:\>java -Xms512m -Xmx512m -XX:+UseConcMarkSweepGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:09:23.213+0800: [GC (Allocation Failure) 2021-03-23T20:09:23.215+0800: [ParNew: 139694K->17470K(157248K), 0.0322912 secs] 139694K->45957K(506816K), 0.0348861 secs] [Times: user=0.08 sys=0.17, real=0.03 secs]
+2021-03-23T20:09:23.357+0800: [GC (Allocation Failure) 2021-03-23T20:09:23.359+0800: [ParNew: 157246K->17471K(157248K), 0.0395039 secs] 185733K->82388K(506816K), 0.0415708 secs] [Times: user=0.16 sys=0.08, real=0.04 secs]
+2021-03-23T20:09:23.462+0800: [GC (Allocation Failure) 2021-03-23T20:09:23.464+0800: [ParNew: 157247K->17472K(157248K), 0.1059408 secs] 222164K->124652K(506816K), 0.1075163 secs] [Times: user=0.72 sys=0.08, real=0.11 secs]
+2021-03-23T20:09:23.624+0800: [GC (Allocation Failure) 2021-03-23T20:09:23.625+0800: [ParNew: 157208K->17468K(157248K), 0.1635451 secs] 264389K->170646K(506816K), 0.1645890 secs] [Times: user=0.88 sys=0.13, real=0.16 secs]
+2021-03-23T20:09:23.849+0800: [GC (Allocation Failure) 2021-03-23T20:09:23.850+0800: [ParNew: 157244K->17468K(157248K), 0.1258277 secs] 310422K->211053K(506816K), 0.1267811 secs] [Times: user=0.55 sys=0.08, real=0.13 secs]
+2021-03-23T20:09:23.977+0800: [GC (CMS Initial Mark) [1 CMS-initial-mark: 193584K(349568K)] 211125K(506816K), 0.0009994 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]
+2021-03-23T20:09:23.979+0800: [CMS-concurrent-mark-start]
+执行结束！共生成对象的个数:2944
+Heap
+ par new generation   total 157248K, used 23253K [0x00000000e0000000, 0x00000000eaaa0000, 0x00000000eaaa0000)
+  eden space 139776K,   4% used [0x00000000e0000000, 0x00000000e05a61c0, 0x00000000e8880000)
+  from space 17472K,  99% used [0x00000000e9990000, 0x00000000eaa9f380, 0x00000000eaaa0000)
+  to   space 17472K,   0% used [0x00000000e8880000, 0x00000000e8880000, 0x00000000e9990000)
+ concurrent mark-sweep generation total 349568K, used 193584K [0x00000000eaaa0000, 0x0000000100000000, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+2021-03-23T20:09:23.994+0800: [CMS-concurrent-mark: 0.010/0.010 secs] [Times: user=0.03 sys=0.00, real=0.02 secs]
+
+
+
+D:\>java -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:09:57.620+0800: [GC (Allocation Failure) 2021-03-23T20:09:57.621+0800: [ParNew: 279616K->34943K(314560K), 0.0626587 secs] 279616K->86921K(1013632K), 0.0647807 secs] [Times: user=0.16 sys=0.22, real=0.07 secs]
+2021-03-23T20:09:57.828+0800: [GC (Allocation Failure) 2021-03-23T20:09:57.829+0800: [ParNew: 314559K->34943K(314560K), 0.0928429 secs] 366537K->160052K(1013632K), 0.0940376 secs] [Times: user=0.22 sys=0.34, real=0.09 secs]
+执行结束！共生成对象的个数:2662
+Heap
+ par new generation   total 314560K, used 110112K [0x00000000c0000000, 0x00000000d5550000, 0x00000000d5550000)
+  eden space 279616K,  26% used [0x00000000c0000000, 0x00000000c4968410, 0x00000000d1110000)
+  from space 34944K,  99% used [0x00000000d1110000, 0x00000000d332fd58, 0x00000000d3330000)
+  to   space 34944K,   0% used [0x00000000d3330000, 0x00000000d3330000, 0x00000000d5550000)
+ concurrent mark-sweep generation total 699072K, used 125109K [0x00000000d5550000, 0x0000000100000000, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+
+
+D:\>java -Xms2g -Xmx2g -XX:+UseConcMarkSweepGC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+执行结束！共生成对象的个数:1845
+Heap
+ par new generation   total 613440K, used 484407K [0x0000000080000000, 0x00000000a9990000, 0x00000000a9990000)
+  eden space 545344K,  88% used [0x0000000080000000, 0x000000009d90ded0, 0x00000000a1490000)
+  from space 68096K,   0% used [0x00000000a1490000, 0x00000000a1490000, 0x00000000a5710000)
+  to   space 68096K,   0% used [0x00000000a5710000, 0x00000000a5710000, 0x00000000a9990000)
+ concurrent mark-sweep generation total 1415616K, used 0K [0x00000000a9990000, 0x0000000100000000, 0x0000000100000000)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+
+
+D:\>
+D:\>java -Xms256m -Xmx256m -XX:+UseG1GC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:11:20.781+0800: [GC pause (G1 Evacuation Pause) (young), 0.0072368 secs]
+   [Parallel Time: 4.9 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 584.7, Avg: 584.8, Max: 584.9, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.4, Avg: 0.5, Max: 0.7, Diff: 0.3, Sum: 4.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 3.6, Avg: 3.8, Max: 3.9, Diff: 0.2, Sum: 30.4]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+         [Termination Attempts: Min: 1, Avg: 4.6, Max: 8, Diff: 7, Sum: 37]
+      [GC Worker Other (ms): Min: 0.1, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.0]
+      [GC Worker Total (ms): Min: 4.4, Avg: 4.5, Max: 4.6, Diff: 0.2, Sum: 36.1]
+      [GC Worker End (ms): Min: 589.3, Avg: 589.3, Max: 589.4, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 24.0M(24.0M)->0.0B(26.0M) Survivors: 0.0B->3072.0K Heap: 31.2M(256.0M)->12.1M(256.0M)]
+ [Times: user=0.09 sys=0.03, real=0.14 secs]
+2021-03-23T20:11:20.983+0800: [GC pause (G1 Evacuation Pause) (young), 0.0095518 secs]
+   [Parallel Time: 6.6 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 785.5, Avg: 785.6, Max: 785.7, Diff: 0.3]
+      [Ext Root Scanning (ms): Min: 0.3, Avg: 0.4, Max: 0.6, Diff: 0.3, Sum: 3.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 1.3, Diff: 1.3, Sum: 1.9]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 2, Diff: 2, Sum: 9]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 3.7, Avg: 4.8, Max: 5.5, Diff: 1.8, Sum: 38.5]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.8, Diff: 0.8, Sum: 4.7]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 6.0, Avg: 6.1, Max: 6.3, Diff: 0.3, Sum: 48.9]
+      [GC Worker End (ms): Min: 791.7, Avg: 791.7, Max: 791.8, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 2.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.7 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 26.0M(26.0M)->0.0B(132.0M) Survivors: 3072.0K->4096.0K Heap: 46.9M(256.0M)->22.6M(256.0M)]
+ [Times: user=0.03 sys=0.09, real=0.09 secs]
+2021-03-23T20:11:21.389+0800: [GC pause (G1 Evacuation Pause) (young) (to-space exhausted), 0.0284617 secs]
+   [Parallel Time: 19.4 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1197.6, Avg: 1197.7, Max: 1197.8, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.6, Diff: 0.6, Sum: 2.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 1.0, Diff: 1.0, Sum: 1.7]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 2, Diff: 2, Sum: 10]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 0.0, Avg: 12.8, Max: 17.5, Diff: 17.5, Sum: 102.2]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.9, Sum: 4.8]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.5, Avg: 4.9, Max: 18.4, Diff: 18.0, Sum: 39.6]
+      [GC Worker Total (ms): Min: 18.7, Avg: 19.0, Max: 19.1, Diff: 0.4, Sum: 151.7]
+      [GC Worker End (ms): Min: 1216.5, Avg: 1216.7, Max: 1216.8, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 8.5 ms]
+      [Evacuation Failure: 1.0 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.2 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 132.0M(132.0M)->0.0B(22.0M) Survivors: 4096.0K->17.0M Heap: 197.3M(256.0M)->113.0M(256.0M)]
+ [Times: user=0.08 sys=0.05, real=0.16 secs]
+2021-03-23T20:11:21.578+0800: [GC pause (G1 Humongous Allocation) (young) (initial-mark), 0.0080336 secs]
+   [Parallel Time: 5.5 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1381.7, Avg: 1382.0, Max: 1382.4, Diff: 0.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.7, Max: 1.0, Diff: 1.0, Sum: 5.5]
+      [Update RS (ms): Min: 0.3, Avg: 0.4, Max: 0.8, Diff: 0.5, Sum: 3.4]
+         [Processed Buffers: Min: 1, Avg: 1.6, Max: 2, Diff: 1, Sum: 13]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 2.9, Avg: 3.2, Max: 3.6, Diff: 0.7, Sum: 25.7]
+      [Termination (ms): Min: 0.0, Avg: 0.4, Max: 0.7, Diff: 0.7, Sum: 3.6]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.4]
+      [GC Worker Total (ms): Min: 4.4, Avg: 4.8, Max: 5.2, Diff: 0.8, Sum: 38.8]
+      [GC Worker End (ms): Min: 1386.8, Avg: 1386.8, Max: 1386.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 2.2 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 18.0M(22.0M)->0.0B(71.0M) Survivors: 17.0M->5120.0K Heap: 132.2M(256.0M)->119.4M(256.0M)]
+ [Times: user=0.06 sys=0.06, real=0.10 secs]
+2021-03-23T20:11:21.681+0800执行结束！共生成对象的个数:979:
+[GC concurrent-root-region-scan-start]
+2021-03-23T20:11:21.690+0800: [GC concurrent-root-region-scan-end, 0.0087914 secs]
+2021-03-23T20:11:21.704+0800: [GC concurrent-mark-start]
+2021-03-23T20:11:21.721+0800: [GC concurrent-mark-end, 0.0174599 secs]
+2021-03-23T20:11:21.722+0800: [GC remark 2021-03-23T20:11:21.733+0800: [Finalize Marking, 0.0008190 secs] 2021-03-23T20:11:21.734+0800: [GC ref-proc, 0.0013383 secs] 2021-03-23T20:11:21.735+0800: [Unloading, 0.0031846 secs], 0.0172471 secs]
+ [Times: user=0.02 sys=0.00, real=0.02 secs]
+2021-03-23T20:11:21.741+0800: [GC cleanup 121M->121M(256M), 0.0122763 secs]
+ [Times: user=0.00 sys=0.00, real=0.01 secs]
+Heap
+ garbage-first heap   total 262144K, used 122905K [0x00000000f0000000, 0x00000000f0100800, 0x0000000100000000)
+  region size 1024K, 6 young (6144K), 5 survivors (5120K)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+
+
+
+D:\>java -Xms512m -Xmx512m -XX:+UseG1GC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:12:14.086+0800: [GC pause (G1 Evacuation Pause) (young), 0.0093403 secs]
+   [Parallel Time: 5.4 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 465.1, Avg: 465.2, Max: 465.3, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.5, Max: 0.7, Diff: 0.7, Sum: 3.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 3.7, Avg: 4.1, Max: 4.4, Diff: 0.7, Sum: 32.6]
+      [Termination (ms): Min: 0.0, Avg: 0.3, Max: 0.3, Diff: 0.3, Sum: 2.0]
+         [Termination Attempts: Min: 1, Avg: 3.8, Max: 11, Diff: 10, Sum: 30]
+      [GC Worker Other (ms): Min: 0.1, Avg: 0.2, Max: 1.1, Diff: 1.0, Sum: 1.7]
+      [GC Worker Total (ms): Min: 4.9, Avg: 5.0, Max: 5.1, Diff: 0.2, Sum: 40.3]
+      [GC Worker End (ms): Min: 470.2, Avg: 470.2, Max: 470.3, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 3.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 25.0M(25.0M)->0.0B(24.0M) Survivors: 0.0B->4096.0K Heap: 32.1M(512.0M)->10.7M(512.0M)]
+ [Times: user=0.01 sys=0.00, real=0.05 secs]
+2021-03-23T20:12:14.180+0800: [GC pause (G1 Evacuation Pause) (young), 0.0098201 secs]
+   [Parallel Time: 6.4 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 558.2, Avg: 558.4, Max: 558.8, Diff: 0.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.8, Diff: 0.8, Sum: 3.0]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.9, Diff: 0.9, Sum: 1.7]
+         [Processed Buffers: Min: 0, Avg: 0.8, Max: 4, Diff: 4, Sum: 6]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 4.5, Avg: 4.8, Max: 5.3, Diff: 0.8, Sum: 38.6]
+      [Termination (ms): Min: 0.0, Avg: 0.4, Max: 0.8, Diff: 0.8, Sum: 3.6]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 5.5, Avg: 5.9, Max: 6.1, Diff: 0.7, Sum: 47.2]
+      [GC Worker End (ms): Min: 564.3, Avg: 564.3, Max: 564.4, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 24.0M(24.0M)->0.0B(36.0M) Survivors: 4096.0K->4096.0K Heap: 38.6M(512.0M)->20.1M(512.0M)]
+ [Times: user=0.00 sys=0.00, real=0.13 secs]
+2021-03-23T20:12:14.379+0800: [GC pause (G1 Evacuation Pause) (young), 0.0090546 secs]
+   [Parallel Time: 6.1 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 757.6, Avg: 757.7, Max: 758.3, Diff: 0.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 0.5, Diff: 0.5, Sum: 2.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.4, Max: 0.9, Diff: 0.9, Sum: 2.9]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 2, Diff: 2, Sum: 9]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 3.5, Avg: 4.3, Max: 5.0, Diff: 1.5, Sum: 34.8]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.9, Sum: 4.4]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 5.1, Avg: 5.6, Max: 5.8, Diff: 0.7, Sum: 45.1]
+      [GC Worker End (ms): Min: 763.4, Avg: 763.4, Max: 763.4, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 2.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 36.0M(36.0M)->0.0B(302.0M) Survivors: 4096.0K->5120.0K Heap: 70.2M(512.0M)->32.2M(512.0M)]
+ [Times: user=0.02 sys=0.00, real=0.11 secs]
+执行结束！共生成对象的个数:1556
+Heap
+ garbage-first heap   total 524288K, used 318026K [0x00000000e0000000, 0x00000000e0101000, 0x0000000100000000)
+  region size 1024K, 218 young (223232K), 5 survivors (5120K)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+
+
+
+
+D:\>java -Xms1g -Xmx1g -XX:+UseG1GC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:12:46.313+0800: [GC pause (G1 Evacuation Pause) (young), 0.0149722 secs]
+   [Parallel Time: 11.3 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 709.4, Avg: 709.5, Max: 709.6, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.4, Avg: 1.5, Max: 8.3, Diff: 7.9, Sum: 12.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 2.1, Avg: 8.5, Max: 10.0, Diff: 8.0, Sum: 68.0]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 1.0, Diff: 1.0, Sum: 4.7]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.1, Avg: 0.1, Max: 0.1, Diff: 0.0, Sum: 1.0]
+      [GC Worker Total (ms): Min: 10.6, Avg: 10.8, Max: 10.9, Diff: 0.3, Sum: 86.0]
+      [GC Worker End (ms): Min: 720.2, Avg: 720.3, Max: 720.3, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 3.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 51.0M(51.0M)->0.0B(44.0M) Survivors: 0.0B->7168.0K Heap: 61.7M(1024.0M)->24.7M(1024.0M)]
+ [Times: user=0.08 sys=0.06, real=0.13 secs]
+2021-03-23T20:12:46.523+0800: [GC pause (G1 Evacuation Pause) (young), 0.0124737 secs]
+   [Parallel Time: 8.5 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 920.3, Avg: 920.9, Max: 924.2, Diff: 3.8]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.5, Max: 0.7, Diff: 0.7, Sum: 3.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.6, Diff: 0.6, Sum: 0.6]
+         [Processed Buffers: Min: 0, Avg: 0.3, Max: 1, Diff: 1, Sum: 2]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 3.5, Avg: 6.2, Max: 7.3, Diff: 3.8, Sum: 49.7]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 1.5, Diff: 1.5, Sum: 5.7]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [GC Worker Total (ms): Min: 4.2, Avg: 7.5, Max: 8.3, Diff: 4.0, Sum: 60.2]
+      [GC Worker End (ms): Min: 928.4, Avg: 928.4, Max: 928.6, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 3.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 44.0M(44.0M)->0.0B(44.0M) Survivors: 7168.0K->7168.0K Heap: 86.5M(1024.0M)->45.2M(1024.0M)]
+ [Times: user=0.02 sys=0.00, real=0.08 secs]
+2021-03-23T20:12:46.674+0800: [GC pause (G1 Evacuation Pause) (young), 0.0121586 secs]
+   [Parallel Time: 8.8 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1069.4, Avg: 1069.7, Max: 1070.1, Diff: 0.6]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 0.6, Diff: 0.6, Sum: 2.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.4, Max: 2.3, Diff: 2.3, Sum: 3.1]
+         [Processed Buffers: Min: 1, Avg: 1.4, Max: 2, Diff: 1, Sum: 11]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 4.7, Avg: 6.8, Max: 7.7, Diff: 3.0, Sum: 54.1]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 1.1, Diff: 1.1, Sum: 5.3]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 7.8, Avg: 8.2, Max: 8.4, Diff: 0.7, Sum: 65.3]
+      [GC Worker End (ms): Min: 1077.8, Avg: 1077.9, Max: 1077.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.2 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 44.0M(44.0M)->0.0B(60.0M) Survivors: 7168.0K->7168.0K Heap: 101.0M(1024.0M)->63.6M(1024.0M)]
+ [Times: user=0.11 sys=0.03, real=0.07 secs]
+2021-03-23T20:12:46.869+0800: [GC pause (G1 Evacuation Pause) (young), 0.0174362 secs]
+   [Parallel Time: 14.4 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1265.4, Avg: 1265.6, Max: 1265.9, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 0.5, Diff: 0.5, Sum: 2.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.4]
+         [Processed Buffers: Min: 0, Avg: 0.9, Max: 1, Diff: 1, Sum: 7]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 12.1, Avg: 12.5, Max: 13.5, Diff: 1.4, Sum: 100.3]
+      [Termination (ms): Min: 0.0, Avg: 1.0, Max: 1.4, Diff: 1.4, Sum: 7.6]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 13.6, Avg: 13.9, Max: 14.2, Diff: 0.6, Sum: 111.4]
+      [GC Worker End (ms): Min: 1279.4, Avg: 1279.5, Max: 1279.7, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 60.0M(60.0M)->0.0B(74.0M) Survivors: 7168.0K->9216.0K Heap: 139.3M(1024.0M)->85.6M(1024.0M)]
+ [Times: user=0.01 sys=0.06, real=0.06 secs]
+2021-03-23T20:12:47.018+0800: [GC pause (G1 Evacuation Pause) (young), 0.0200476 secs]
+   [Parallel Time: 17.0 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1414.0, Avg: 1414.3, Max: 1415.0, Diff: 1.0]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.6, Diff: 0.6, Sum: 2.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.4, Max: 0.6, Diff: 0.6, Sum: 2.8]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 3, Diff: 3, Sum: 12]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 15.3, Avg: 15.6, Max: 15.7, Diff: 0.4, Sum: 124.5]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.5, Diff: 0.5, Sum: 1.7]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.3]
+      [GC Worker Total (ms): Min: 15.9, Avg: 16.6, Max: 16.9, Diff: 1.1, Sum: 132.6]
+      [GC Worker End (ms): Min: 1430.8, Avg: 1430.9, Max: 1430.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 2.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.2 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 74.0M(74.0M)->0.0B(194.0M) Survivors: 9216.0K->11.0M Heap: 178.1M(1024.0M)->115.0M(1024.0M)]
+ [Times: user=0.13 sys=0.06, real=0.06 secs]
+执行结束！共生成对象的个数:1512
+Heap
+ garbage-first heap   total 1048576K, used 147925K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 36 young (36864K), 11 survivors (11264K)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+
+
+
+D:\>java -Xms2g -Xmx2g -XX:+UseG1GC  -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+正在运行
+2021-03-23T20:13:19.496+0800: [GC pause (G1 Evacuation Pause) (young), 0.0172221 secs]
+   [Parallel Time: 13.6 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 880.5, Avg: 880.6, Max: 880.8, Diff: 0.3]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.5, Max: 0.8, Diff: 0.6, Sum: 4.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.1]
+      [Object Copy (ms): Min: 11.6, Avg: 11.9, Max: 12.5, Diff: 0.9, Sum: 95.4]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.8, Diff: 0.8, Sum: 4.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.1, Avg: 0.1, Max: 0.3, Diff: 0.2, Sum: 1.1]
+      [GC Worker Total (ms): Min: 13.0, Avg: 13.2, Max: 13.5, Diff: 0.4, Sum: 105.6]
+      [GC Worker End (ms): Min: 893.8, Avg: 893.8, Max: 893.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 3.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 102.0M(102.0M)->0.0B(89.0M) Survivors: 0.0B->13.0M Heap: 126.8M(2048.0M)->34.2M(2048.0M)]
+ [Times: user=0.01 sys=0.11, real=0.09 secs]
+2021-03-23T20:13:19.679+0800: [GC pause (G1 Evacuation Pause) (young), 0.0184708 secs]
+   [Parallel Time: 15.2 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1062.7, Avg: 1062.9, Max: 1063.3, Diff: 0.6]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.8, Diff: 0.8, Sum: 3.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.5, Diff: 0.5, Sum: 0.5]
+      [Object Copy (ms): Min: 13.2, Avg: 13.7, Max: 14.2, Diff: 1.0, Sum: 109.8]
+      [Termination (ms): Min: 0.0, Avg: 0.5, Max: 0.9, Diff: 0.9, Sum: 3.9]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 14.3, Avg: 14.8, Max: 15.0, Diff: 0.6, Sum: 118.2]
+      [GC Worker End (ms): Min: 1077.6, Avg: 1077.7, Max: 1077.7, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.1 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 89.0M(89.0M)->0.0B(89.0M) Survivors: 13.0M->13.0M Heap: 143.5M(2048.0M)->64.8M(2048.0M)]
+ [Times: user=0.06 sys=0.05, real=0.04 secs]
+2021-03-23T20:13:19.812+0800: [GC pause (G1 Evacuation Pause) (young), 0.0219262 secs]
+   [Parallel Time: 17.7 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1196.7, Avg: 1197.8, Max: 1200.9, Diff: 4.2]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.6, Diff: 0.6, Sum: 3.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.5, Max: 1.1, Diff: 1.1, Sum: 4.0]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 3, Diff: 3, Sum: 12]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 11.5, Avg: 14.5, Max: 15.7, Diff: 4.1, Sum: 115.8]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 1.3, Diff: 1.3, Sum: 5.9]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 12.9, Avg: 16.2, Max: 17.5, Diff: 4.5, Sum: 129.4]
+      [GC Worker End (ms): Min: 1213.8, Avg: 1213.9, Max: 1214.2, Diff: 0.4]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 3.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.9 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.2 ms]
+      [Humongous Reclaim: 0.3 ms]
+      [Free CSet: 0.2 ms]
+   [Eden: 89.0M(89.0M)->0.0B(89.0M) Survivors: 13.0M->13.0M Heap: 177.9M(2048.0M)->97.3M(2048.0M)]
+ [Times: user=0.03 sys=0.08, real=0.06 secs]
+2021-03-23T20:13:19.955+0800: [GC pause (G1 Evacuation Pause) (young), 0.0187168 secs]
+   [Parallel Time: 14.8 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1338.6, Avg: 1338.9, Max: 1339.8, Diff: 1.2]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 0.5, Diff: 0.5, Sum: 2.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.8, Sum: 4.6]
+         [Processed Buffers: Min: 0, Avg: 2.1, Max: 4, Diff: 4, Sum: 17]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 12.1, Avg: 12.5, Max: 13.1, Diff: 0.9, Sum: 100.2]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 1.2, Diff: 1.2, Sum: 5.2]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 13.2, Avg: 14.2, Max: 14.6, Diff: 1.4, Sum: 113.3]
+      [GC Worker End (ms): Min: 1353.0, Avg: 1353.1, Max: 1353.2, Diff: 0.2]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 3.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.8 ms]
+      [Humongous Register: 0.2 ms]
+      [Humongous Reclaim: 0.3 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 89.0M(89.0M)->0.0B(99.0M) Survivors: 13.0M->13.0M Heap: 213.2M(2048.0M)->128.8M(2048.0M)]
+ [Times: user=0.05 sys=0.09, real=0.06 secs]
+2021-03-23T20:13:20.112+0800: [GC pause (G1 Evacuation Pause) (young), 0.0258733 secs]
+   [Parallel Time: 22.6 ms, GC Workers: 8]
+      [GC Worker Start (ms): Min: 1496.6, Avg: 1496.7, Max: 1497.3, Diff: 0.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.5, Diff: 0.5, Sum: 3.0]
+      [Update RS (ms): Min: 0.5, Avg: 0.6, Max: 0.8, Diff: 0.2, Sum: 4.8]
+         [Processed Buffers: Min: 1, Avg: 2.0, Max: 3, Diff: 2, Sum: 16]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Object Copy (ms): Min: 19.9, Avg: 20.3, Max: 21.1, Diff: 1.2, Sum: 162.1]
+      [Termination (ms): Min: 0.0, Avg: 0.8, Max: 1.2, Diff: 1.2, Sum: 6.4]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 8]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.4]
+      [GC Worker Total (ms): Min: 21.5, Avg: 22.1, Max: 22.3, Diff: 0.8, Sum: 177.0]
+      [GC Worker End (ms): Min: 1518.8, Avg: 1518.9, Max: 1518.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.2 ms]
+      [Humongous Reclaim: 0.3 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 99.0M(99.0M)->0.0B(117.0M) Survivors: 13.0M->14.0M Heap: 259.8M(2048.0M)->165.8M(2048.0M)]
+ [Times: user=0.05 sys=0.22, real=0.09 secs]
+执行结束！共生成对象的个数:2450
+Heap
+ garbage-first heap   total 2097152K, used 169742K [0x0000000080000000, 0x0000000080104000, 0x0000000100000000)
+  region size 1024K, 15 young (15360K), 14 survivors (14336K)
+ Metaspace       used 2650K, capacity 4486K, committed 4864K, reserved 1056768K
+  class space    used 297K, capacity 386K, committed 512K, reserved 1048576K
+
+D:\>
+
+
+
+
+
+
+
+
+
